@@ -1,0 +1,14 @@
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\bin\Debug\netcoreapp2.1\Parcial_Tidele.deps.json
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\bin\Debug\netcoreapp2.1\Parcial_Tidele.runtimeconfig.json
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\bin\Debug\netcoreapp2.1\Parcial_Tidele.runtimeconfig.dev.json
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\bin\Debug\netcoreapp2.1\Parcial_Tidele.dll
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\bin\Debug\netcoreapp2.1\Parcial_Tidele.pdb
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.csprojAssemblyReference.cache
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.csproj.CoreCompileInputs.cache
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.RazorAssemblyInfo.cache
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.RazorAssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.AssemblyInfoInputs.cache
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.AssemblyInfo.cs
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.RazorTargetAssemblyInfo.cache
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.dll
+C:\Users\Alejandro\Desktop\Parcial\Parcial_Tidele\Parcial_Tidele\obj\Debug\netcoreapp2.1\Parcial_Tidele.pdb
