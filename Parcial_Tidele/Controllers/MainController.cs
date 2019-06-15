@@ -39,6 +39,7 @@ namespace Parcial_Tidele.Controllers
         public void Post(string name,string house,List<string> spells)
         {
             new MagicianRepository().Save(name, Convert.ToInt32(house));
+            // TODO: Asignar hechizos al mago.
         }       
     }
 }
