@@ -1,5 +1,4 @@
 import axios from "axios";
-import { merge } from "lodash";
 import { EventBus } from "@/eventBus"
 
 const API = "http://localhost:50950/api";
@@ -36,17 +35,6 @@ client.interceptors.response.use(
     error => errorHandler(error)
 );
 
-const toQueryParams = params => {
-    return Object.keys(params)
-        .map(key => {
-            const typeOfKey = typeof params[key];
-            const val =
-                typeOfKey === "object" ? JSON.stringify(params[key]) : params[key];
-            return key + "=" + val;
-        })
-        .join("&");
-};
-
 export default {
     async execute(method, resource, data) {
         const config = {
@@ -70,21 +58,6 @@ export default {
     // *****************************************************************************************************************
     // BOOKMARKS
     // *****************************************************************************************************************
-    validateBookmarkName(data) {
-        return this.execute("post", "/bookmarks/validate/name", data);
-    },
-
-    getBookmarks(queryParams = null) {
-        let path = "/values";
-
-        if (queryParams) {
-            const strQueryParams = toQueryParams(queryParams);
-            path += "?" + encodeURI(strQueryParams);
-        }
-
-        return this.execute("GET", path, null, {}, "getBookmarks");
-    },
-
     getMagicians() {
         return this.execute("GET", "/main");
     },

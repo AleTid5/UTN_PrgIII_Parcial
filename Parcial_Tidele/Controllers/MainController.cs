@@ -37,6 +37,8 @@ namespace Parcial_Tidele.Controllers
         [EnableCors("_myAllowSpecificOrigins")]
         public void Post([FromBody] string value)
         {
+            string value2 = value;
+            int a = 0;
         }       
     }
 }

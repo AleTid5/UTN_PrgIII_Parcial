@@ -35,13 +35,16 @@
           </el-select>
         </div>
         <div class="el-col-8">
+          <div class="el-col-8">&nbsp;</div>
+          <div class="el-col-16">
           <el-checkbox-group v-model="form.spells">
-            <el-checkbox v-for="spell in spells" :label="spell.id" :key="spell.id" class="el-col-24">{{ spell.description }}</el-checkbox>
+            <el-checkbox v-for="spell in spells" :label="spell.id" :key="spell.id" class="el-col-24" :title="'Es vencido por: ' + spell.spellDefeat.name">{{ spell.name }}</el-checkbox>
           </el-checkbox-group>
+        </div>
         </div>
       </div>
       <div class="el-col-24 text-center">
-        <el-button type="success" plain>Guardar!</el-button>
+        <el-button type="success" plain @click="saveMagician()">Guardar!</el-button>
       </div>
     </div>
   </div>
@@ -79,6 +82,9 @@
     },
 
     methods: {
+      saveMagician() {
+        api.saveMagician(this.form);
+      }
     },
 
     watch: {
