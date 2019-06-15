@@ -66,7 +66,7 @@ export default {
         return this.execute("GET", "/main/" + id);
     },
 
-    saveMagician(data) {
-        return this.execute("post", "/main", data);
+    saveMagician(name, house, spells) {
+        return this.execute("GET", "/main/save?name=" + name + "&house=" + house + "&spells=" + spells);
     },
 };

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Parcial_Tidele.Services.Repository;
 
 namespace Parcial_Tidele.Controllers
@@ -32,13 +33,12 @@ namespace Parcial_Tidele.Controllers
             return new JsonResult(new SpellRepository().FindAll());
         }
 
-        // POST: api/Main
-        [HttpPost, HttpOptions]
+        // GET: api/Main
+        [HttpGet("save", Name = "Save"), HttpOptions]
         [EnableCors("_myAllowSpecificOrigins")]
-        public void Post([FromBody] string value)
+        public void Post(string name,string house,List<string> spells)
         {
-            string value2 = value;
-            int a = 0;
+            new MagicianRepository().Save(name, Convert.ToInt32(house));
         }       
     }
 }

@@ -83,7 +83,7 @@
 
     methods: {
       saveMagician() {
-        api.saveMagician(this.form);
+        api.saveMagician(this.form.name, this.form.house, this.form.spells);
       }
     },
 

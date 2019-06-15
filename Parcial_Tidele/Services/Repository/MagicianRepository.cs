@@ -42,6 +42,24 @@ namespace Parcial_Tidele.Services.Repository
             }
         }
 
+        public void Save(String Name, int HouseId)
+        {
+            try
+            {
+                String Query = String.Format("INSERT INTO {0} (Nombre, IdCasa) VALUES ('{1}', {2})",
+                                            this.Table, Name, HouseId);
+                this.ExecInsert(Query);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                this.SqlConnection.Close();
+            }
+        }
+
         private Magician GetRowCasted()
         {
             return new Magician
