@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "Parcial_Tidele/Views/package.json"
+      ]
+    }
+  }
+}
